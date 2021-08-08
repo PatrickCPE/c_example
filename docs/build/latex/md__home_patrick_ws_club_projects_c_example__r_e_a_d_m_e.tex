@@ -1,0 +1,50 @@
+This is just a basic example project so you can see how you would set up documentation and C\+Make.
+
+This is so I don\textquotesingle{}t need to answer 1000 questions on how to structure your projects, build docs, or how to test \+:)
+
+
+\begin{DoxyItemize}
+\item Documentation\+: Sphinx \& Breathe
+\item Build\+: C\+Make
+\item Test\+: T\+BD
+\end{DoxyItemize}
+
+At a low level you need to do two things.
+
+Tell C\+Make where your files are, and tell it where and how you want it built
+
+For example for this project uses ninja in debug, and Unix Makefiles for the release. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd c\_example}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#Setup debug build dir}
+\DoxyCodeLine{Cmake -\/G Ninja -\/S . -\/B build/debug}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#Setup release build dir}
+\DoxyCodeLine{Cmake -\/G "Unix Makefiles" -\/S . -\/B build/release}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#Build debug directory}
+\DoxyCodeLine{Cmake -\/-\/build build/debug}
+\DoxyCodeLine{\#Build release directory}
+\DoxyCodeLine{Cmake -\/-\/build build/release}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#Clean debug directory then build}
+\DoxyCodeLine{cmake -\/-\/build build/debug/ -\/-\/clean-\/first}
+\end{DoxyCode}
+
+
+To run the tests I have set up in this directory 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#For example to test the debug release}
+\DoxyCodeLine{cd build/debug}
+\DoxyCodeLine{ctest}
+\end{DoxyCode}
+
+
+one will fail and one will succeed. It\textquotesingle{}s as simple as an assert statement and returning zero if it succeeds.
+
+To build the docs you\textquotesingle{}ll need Doxygen 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt install doxygen}
+\end{DoxyCode}
+ 

@@ -1,0 +1,54 @@
+Start testing: Aug 08 18:20 EDT
+----------------------------------------------------------
+1/3 Testing: test_pass
+1/3 Test: test_pass
+Command: "/home/patrick/ws/club/projects/c_example/build/debug/tests/test_pass"
+Directory: /home/patrick/ws/club/projects/c_example/build/debug/tests
+"test_pass" start time: Aug 08 18:20 EDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_pass" end time: Aug 08 18:20 EDT
+"test_pass" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: test_fail
+2/3 Test: test_fail
+Command: "/home/patrick/ws/club/projects/c_example/build/debug/tests/test_fail"
+Directory: /home/patrick/ws/club/projects/c_example/build/debug/tests
+"test_fail" start time: Aug 08 18:20 EDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"test_fail" end time: Aug 08 18:20 EDT
+"test_fail" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: test_example_lib_b
+3/3 Test: test_example_lib_b
+Command: "/home/patrick/ws/club/projects/c_example/build/debug/tests/test_example_lib_b"
+Directory: /home/patrick/ws/club/projects/c_example/build/debug/tests
+"test_example_lib_b" start time: Aug 08 18:20 EDT
+Output:
+----------------------------------------------------------
+../../tests/test_example_lib_b.c:27:test_function_should_pass:PASS
+../../tests/test_example_lib_b.c:21:test_function_should_fail:FAIL: Expected 5 Was 6
+
+-----------------------
+2 Tests 1 Failures 0 Ignored 
+FAIL
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"test_example_lib_b" end time: Aug 08 18:20 EDT
+"test_example_lib_b" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 08 18:20 EDT

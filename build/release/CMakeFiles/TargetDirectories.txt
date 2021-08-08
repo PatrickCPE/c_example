@@ -1,0 +1,3 @@
+/home/patrick/ws/club/projects/c_example/build/release/CMakeFiles/rebuild_cache.dir
+/home/patrick/ws/club/projects/c_example/build/release/CMakeFiles/edit_cache.dir
+/home/patrick/ws/club/projects/c_example/build/release/CMakeFiles/test.dir

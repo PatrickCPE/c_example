@@ -1,0 +1,6 @@
+test_pass 9 6.74918e-05
+test_fail 1 0
+test_example_lib_b 0 0
+---
+test_fail
+test_example_lib_b
