@@ -6,7 +6,7 @@ This is so I don't need to answer 1000 questions on how to structure your projec
 
 * Documentation: Doxygen
 * Build: CMake
-* Test: CTest
+* Test: CTest (examples with no library or Unity)
 
 At a low level you need to do two things.
 
